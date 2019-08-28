@@ -1,5 +1,24 @@
-$bg-color: rgb(238, 238, 238);
+//Variable Overrides
+$theme-colors:("primary": rgb(189, 50, 231));
+$body-bg: #ededed;
 
-body{
-    background:white;
-}
+.jumbotron{
+    background-color: #fff !important;
+    border-top: 3px solid rgb(219,219,219);
+};
+
+.navbar-dark{
+    .navbar-nav{
+        .nav-link {
+            color: white !important;
+
+            &:hover {
+                color: #e9e9e9 !important;
+            };
+        };
+    };
+};
+
+
+//Bootstrap Sass Files
+@import "../node_modules/bootstrap/scss/bootstrap";
